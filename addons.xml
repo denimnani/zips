@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.denimnani" name="DenimNani Repo" version="0.0.1" provider-name="DenimNani">
+	<extension point="xbmc.addon.repository" name="DenimNani Repo">
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/denimnani/zips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/denimnani/zips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/denimnani/zips/master/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">DenimNani repository.</summary>
+		<description lang="en"></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="service.subloader" name="SubLoader" version="0.1.3" provider-name="DenimNani">
+  <requires>
+    <import addon="xbmc.python" version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.service" library="monitor.py" start="login"></extension>  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Automatic subtitles for your content</summary>
+    <description lang="en">Auto download the best subtitle automatically as soon you start the video.
+Special thanks to OpenSubtitles.org for providing a unique UA for Subloader.</description>
+    <platform>all</platform>
+    <language>en</language>
+    <license>GPL</license>
+    <website>https://github.com/denimnani</website>
+	<assets>
+		<icon>iconsubloader.png</icon>
+		<fanart>fanartsubloader.png</fanart>
+		<screenshot>resources/media/screenshots/screenshot1subLoader.jpg</screenshot>
+		<screenshot>fanartsubloader.png</screenshot>
+	</assets>
+    <source>https://github.com/denimnani/service.subloader</source>
+    <forum></forum>
+    <email></email>
+	<news>0.1.3     21.07.2019
+Added OS user login.
+Fixed debug option.
+Added more debug information.
+Massive code rewrite.
+Several optimizations.
+Added audio language exclusions.
+Added video addon exclusions.
+Improved sorting settings.
+Improved settings layout.
+Added Do nothing option.
+
+0.1.2     17.06.2019
+Added a unique User Agent from Opensubtitles.org.
+
+0.1.1     12.06.2019
+Fixed release detection bug.
+Fixed typo.
+
+0.1.0     10.06.2019
+Fixed instalation bug.
+Fixed notifications bug.
+Started Beta convergence.
+Added default behavior selection.
+Added auto donwload any subtitle if no match found.
+Updated settings xml.
+Updated strings po.
+Release type detection improved.</news>
+  </extension>
+</addon>
