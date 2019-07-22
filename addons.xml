@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
 <addon id="repository.denimnani" name="DenimNani Repo" version="0.0.1" provider-name="DenimNani">
 	<extension point="xbmc.addon.repository" name="DenimNani Repo">
 	<dir>
@@ -66,3 +67,4 @@ Updated strings po.
 Release type detection improved.</news>
   </extension>
 </addon>
+</addons>
