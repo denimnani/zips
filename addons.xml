@@ -15,7 +15,8 @@
 	</extension>
 </addon>
 
-<addon id="service.subloader" name="SubLoader" version="0.1.6" provider-name="DenimNani">
+<addon id="service.subloader"
+    name="SubLoader" version="0.1.6" provider-name="DenimNani">
   <requires>
   </requires>
   <extension point="xbmc.service" library="monitor.py" start="login"></extension>  
